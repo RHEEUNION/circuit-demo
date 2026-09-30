@@ -1,48 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-label="Circuit. We don't wrap, we shield. Confidential DeFi on Orbinum, routed by Enso.">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-label="Circuit Finance. We don't wrap, we shield. Private DeFi on the liquidity you already use.">
   <defs>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#1A2129" stroke-width="1"/>
-    </pattern>
-    <radialGradient id="fade" cx="72%" cy="50%" r="60%">
-      <stop offset="0" stop-color="#07090B" stop-opacity="0"/>
-      <stop offset="1" stop-color="#07090B" stop-opacity="1"/>
+    <radialGradient id="ga" cx="8%" cy="0%" r="70%">
+      <stop offset="0" stop-color="#00C2A8" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#00C2A8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gb" cx="95%" cy="10%" r="60%">
+      <stop offset="0" stop-color="#7B61FF" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#7B61FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="gc" cx="60%" cy="120%" r="60%">
+      <stop offset="0" stop-color="#FFAA5A" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#FFAA5A" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="lap" x1="0" x2="1">
-      <stop offset="0" stop-color="#62D6D0" stop-opacity="0"/>
-      <stop offset="1" stop-color="#62D6D0"/>
+      <stop offset="0" stop-color="#00A08A" stop-opacity="0"/>
+      <stop offset="1" stop-color="#00A08A"/>
     </linearGradient>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#101828" flood-opacity=".10"/>
+    </filter>
   </defs>
   <style>
     .sans { font-family: Geist, Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
     .mono { font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
   </style>
 
-  <rect width="1280" height="400" rx="16" fill="#07090B"/>
-  <rect width="1280" height="400" rx="16" fill="url(#grid)"/>
-  <rect width="1280" height="400" rx="16" fill="url(#fade)"/>
+  <rect width="1280" height="400" rx="20" fill="#FFFFFF"/>
+  <rect width="1280" height="400" rx="20" fill="url(#ga)"/>
+  <rect width="1280" height="400" rx="20" fill="url(#gb)"/>
+  <rect width="1280" height="400" rx="20" fill="url(#gc)"/>
+  <rect x=".5" y=".5" width="1279" height="399" rx="19.5" fill="none" stroke="#ECEEF1"/>
 
-  <!-- the track: public outside, shielded inside -->
+  <!-- the track: public liquidity around, the shielded pool inside -->
   <g transform="translate(780 70)">
-    <rect x="0" y="0" width="420" height="260" rx="130" fill="none" stroke="#26303A" stroke-width="2"/>
-    <rect x="22" y="22" width="376" height="216" rx="108" fill="none" stroke="#1A2129" stroke-width="1" stroke-dasharray="6 10"/>
-    <rect x="80" y="80" width="260" height="100" rx="50" fill="none" stroke="#62D6D0" stroke-width="2"/>
-    <path d="M210 0 A0 0 0 0 0 210 0 H290 A130 130 0 0 1 420 130" fill="none" stroke="url(#lap)" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="420" cy="130" r="9" fill="#62D6D0"/>
-    <circle cx="420" cy="130" r="18" fill="none" stroke="#62D6D0" stroke-opacity=".25" stroke-width="2"/>
-    <text x="210" y="136" text-anchor="middle" class="mono" font-size="14" fill="#62D6D0">shielded pool</text>
-    <text x="210" y="-14" text-anchor="middle" class="mono" font-size="13" fill="#F08A4B">public liquidity · erc-4626 · dex</text>
+    <rect x="0" y="0" width="420" height="260" rx="130" fill="#FFFFFF" stroke="#DDE0E5" stroke-width="2" filter="url(#sh)"/>
+    <rect x="22" y="22" width="376" height="216" rx="108" fill="none" stroke="#ECEEF1" stroke-width="1.5" stroke-dasharray="6 10"/>
+    <rect x="80" y="80" width="260" height="100" rx="50" fill="#E2F7F2" stroke="#00A08A" stroke-width="2"/>
+    <path d="M210 0 H290 A130 130 0 0 1 420 130" fill="none" stroke="url(#lap)" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="420" cy="130" r="10" fill="#00A08A"/>
+    <circle cx="420" cy="130" r="20" fill="none" stroke="#00A08A" stroke-opacity=".25" stroke-width="3"/>
+    <text x="210" y="136" text-anchor="middle" class="mono" font-size="15" fill="#007A68">shielded pool</text>
+    <text x="210" y="-14" text-anchor="middle" class="mono" font-size="13" fill="#F06A1D">public liquidity · erc-4626 · dex</text>
   </g>
 
   <!-- wordmark -->
-  <g transform="translate(72 118)">
-    <rect x="0" y="6" width="54" height="36" rx="18" fill="none" stroke="#ECF0F3" stroke-width="3"/>
-    <rect x="12" y="18" width="30" height="12" rx="6" fill="none" stroke="#62D6D0" stroke-width="3"/>
-    <circle cx="42" cy="6" r="5.5" fill="#62D6D0"/>
-    <text x="74" y="40" class="sans" font-size="44" font-weight="600" fill="#ECF0F3" letter-spacing="-1">Circuit</text>
+  <g transform="translate(72 104)">
+    <rect x="0" y="6" width="54" height="36" rx="18" fill="none" stroke="#111418" stroke-width="3"/>
+    <rect x="12" y="18" width="30" height="12" rx="6" fill="none" stroke="#00A08A" stroke-width="3"/>
+    <circle cx="42" cy="6" r="5.5" fill="#00A08A"/>
+    <text x="72" y="40" class="sans" font-size="42" font-weight="700" fill="#111418" letter-spacing="-1">Circuit <tspan fill="#009882" font-weight="600">Finance</tspan></text>
   </g>
 
-  <text x="72" y="228" class="sans" font-size="46" font-weight="600" letter-spacing="-1.5" fill="#ECF0F3">We don't <tspan fill="#5E6975" text-decoration="line-through">wrap</tspan>, we <tspan fill="#62D6D0">shield</tspan>.</text>
-
-  <text x="72" y="276" class="sans" font-size="20" fill="#8C98A5">Confidential DeFi on the liquidity that already exists.</text>
-  <text x="72" y="330" class="mono" font-size="14" fill="#5E6975">// powered by <tspan fill="#ECF0F3">orbinum</tspan> · <tspan fill="#ECF0F3">enso</tspan></text>
+  <text x="72" y="220" class="sans" font-size="46" font-weight="700" letter-spacing="-1.5" fill="#111418">We don't <tspan fill="#A0A6B0" text-decoration="line-through">wrap</tspan>, we <tspan fill="#009882">shield</tspan>.</text>
+  <text x="72" y="266" class="sans" font-size="21" fill="#5F6773">Private DeFi on the liquidity you already use.</text>
+  <text x="72" y="326" class="mono" font-size="14" fill="#9AA1AB">powered by <tspan fill="#111418">orbinum</tspan> · <tspan fill="#111418">enso</tspan></text>
 </svg>

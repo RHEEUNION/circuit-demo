@@ -1,19 +1,19 @@
-<p align="center"><img src="banner.svg" alt="Circuit. We don't wrap, we shield." width="100%"></p>
+<p align="center"><img src="banner.svg" alt="Circuit Finance. We don't wrap, we shield." width="100%"></p>
 
 <p align="center">
   <a href="https://rheeunion.github.io/circuit-demo/"><b>Open the demo →</b></a>
 </p>
 
-**Circuit** is confidential DeFi on the liquidity that already exists. Deposit into a public ERC-4626 vault through one Enso route, and hold the position privately as a note in the Orbinum shielded pool.
+**Circuit Finance** is private DeFi on the liquidity that already exists. Deposit into a public ERC-4626 vault through one Enso route, and hold the position privately as a note in the Orbinum shielded pool.
 
 This repository only hosts the static demo build. Source code is private.
 
 ## Try it
 
 1. Open the demo in a browser with an EVM wallet (MetaMask, Rabby or similar).
-2. **Connect wallet**, then **Sign to unlock**. No gas, no transaction.
-3. **Deposit:** pick a USDC vault, enter an amount, **Preview route**, then **Shield (simulation)**.
-4. **Withdraw:** send part of your note to a fresh address and watch the change note appear.
+2. **Connect wallet**, then **Unlock private balance**. One signature, no gas.
+3. **Add funds** once, in a fixed size. It lands with the next batch (or tap **Settle now** in your portfolio).
+4. **Swap**, **Earn** and **Send** privately. **Prove** creates a file an auditor can check under **Verify**.
 
 ## Simulation mode
 
